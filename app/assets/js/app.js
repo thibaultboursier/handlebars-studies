@@ -6,6 +6,10 @@ define(['modules/services'], function (Services) {
         /** Init */
         function init() {
             Services.init();
+
+            Services.getRepositories('thibaultboursier').done(function (data) {
+
+            });
         }
 
         return {
