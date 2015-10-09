@@ -23,6 +23,8 @@
   "dependencies": {
     "bootstrap": "3.0.0",
     "jquery": "latest",
+    "backbone": "latest",
+    "require": "latest",
     "handlebars": "latest"
   }
 }
