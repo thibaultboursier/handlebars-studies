@@ -1,11 +1,11 @@
 /**
  * Created by tboursier on 09/10/2015.
  */
-define(['modules/services'], function (Services) {
-    var App = (function () {
+define([], function () {
+    var Services = (function () {
         /** Init */
         function init() {
-            Services.init();
+            console.log('Service is loaded');
         }
 
         return {
@@ -13,6 +13,6 @@ define(['modules/services'], function (Services) {
         }
     })();
 
-    return App;
+    return Services;
 });
 
