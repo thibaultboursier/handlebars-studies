@@ -2,10 +2,13 @@
  * Created by tboursier on 09/10/2015.
  */
 define([], function () {
-    var Services = (function () {
+    return (function () {
         var _domain = 'http://api.github.com';
 
-        /** Get repositories */
+        /**
+         * Get repositories
+         * @param {String} username - Github account username
+         */
         function getRepositories(username) {
             if (typeof username === 'undefined' || username.length === 0) {
                 return false;
@@ -20,7 +23,6 @@ define([], function () {
 
         /** Init */
         function init() {
-            console.log('Service is loaded');
         }
 
         return {
@@ -28,7 +30,5 @@ define([], function () {
             getRepositories: getRepositories
         }
     })();
-
-    return Services;
 });
 
