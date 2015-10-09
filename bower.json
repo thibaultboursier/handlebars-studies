@@ -1,0 +1,28 @@
+{
+  "name": "handlebars-studies",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thibaultboursier/handlebars-studies",
+  "authors": [
+    "thibaultboursier <boursier.thibault@gail.com>"
+  ],
+  "description": "Little Handlebars templating tests with Github API",
+  "keywords": [
+    "javascript",
+    "handlebars",
+    "templating",
+    "binding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".idea"
+  ],
+  "dependencies": {
+    "bootstrap": "3.0.0",
+    "jquery": "latest",
+    "handlebars": "latest"
+  }
+}
