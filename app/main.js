@@ -1,8 +1,16 @@
 require.config({
     paths: {
-        "jquery": "../bower_components/jquery/dist/jquery.min.js",
-        "underscore": "../bower_components/underscore/underscore-min.js",
-        "backbone": "../bower_components/backbone/backbone-min.js",
-        "handlebars": "../bower_components/handlebars/handlebars.min.js"
+        "jquery": "../bower_components/jquery/dist/jquery.min",
+        "underscore": "../bower_components/underscore/underscore-min",
+        "backbone": "../bower_components/backbone/backbone-min",
+        "handlebars": "../bower_components/handlebars/handlebars.min",
+        "app": "assets/js/app",
+        "modules": "assets/js/modules"
     }
+});
+
+require(['jquery', 'underscore', 'backbone', 'handlebars'], function () {
+    require(['app'], function (App) {
+        App.init();
+    });
 });
