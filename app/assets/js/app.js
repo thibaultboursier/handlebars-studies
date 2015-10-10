@@ -1,7 +1,7 @@
 /**
  * Created by tboursier on 09/10/2015.
  */
-define(['modules/services'], function (Services) {
+define(['modules/services', 'modules/common', 'handlebars'], function (Services, Common, Handlebars) {
     return (function () {
         var _repositories;
 

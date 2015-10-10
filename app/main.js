@@ -9,7 +9,7 @@ require.config({
     }
 });
 
-require(['jquery', 'underscore', 'backbone'/*, 'handlebars'*/], function () {
+require(['jquery', 'underscore', 'backbone'], function () {
     require(['app'], function (App) {
         App.init();
     });
