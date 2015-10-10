@@ -12,14 +12,17 @@
 <div class="container">
     <div class="col-xs-12">
         <h1>My Github repositories</h1>
-        <div id="repositories"></div>
+
+        <div class="col-xs-12 col-md-6">
+            <div id="repositories"></div>
+        </div>
     </div>
 </div>
 
 <script id="tpl-repositories" type="text/x-handlebars-template">​
-    <ul>
+    <ul class="list-group">
         {{#each objects}}
-        <li class="repository">{{name}}</li>
+        <li class="list-group-item repository">{{name}}</li>
         {{/each}}
     </ul>
 </script>
@@ -27,5 +30,6 @@
 <!-- js dependencies -->
 <script src="../bower_components/requirejs/require.js" data-main="main.js"></script>
 <!-- end js dependencies -->
+
 </body>
 </html>
