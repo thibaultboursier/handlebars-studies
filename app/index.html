@@ -6,6 +6,9 @@
     <!-- css dependencies -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- end css dependencies -->
+    <!-- css custom -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- end css custom -->
 </head>
 <body>
 
@@ -22,7 +25,10 @@
 <script id="tpl-repositories" type="text/x-handlebars-template">​
     <ul class="list-group">
         {{#each objects}}
-        <li class="list-group-item repository">{{name}}</li>
+        <li class="list-group-item repository">
+            {{name}}
+            <span class="label label-info language">{{language}}</span>
+        </li>
         {{/each}}
     </ul>
 </script>
