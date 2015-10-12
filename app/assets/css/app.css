@@ -1,3 +1,7 @@
 #repositories .language {
     margin-left: 8px;
 }
+
+#repositories .more {
+    cursor: pointer;
+}
